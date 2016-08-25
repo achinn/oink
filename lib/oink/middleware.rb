@@ -32,7 +32,8 @@ module Oink
       if routing_info
         controller = routing_info['controller']
         action     = routing_info['action']
-        @logger.info("Oink Action: #{controller}##{action}")
+        query     = routing_info['query']
+        @logger.info("Oink Action: #{controller}##{action} / #{query}")
       end
     end
 
